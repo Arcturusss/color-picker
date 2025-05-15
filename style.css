@@ -1,0 +1,103 @@
+:root {
+  --background-primary: #fce4ec;
+  --nav-primary: #f8bbd0;
+  --text-primary: #6a1b9a;
+  --accent-primary: #ec407a;
+  --button-bg: #f48fb1;
+  --button-text: white;
+  --button-hover: #f06292;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+  height: 100%;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--nav-primary);
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent-primary);
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Badge-style color text */
+.color {
+  font-weight: bold;
+  background-color: var(--nav-primary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  min-width: 80px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
